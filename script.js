@@ -16,13 +16,13 @@ if (numero1 > numero2) {
 
 
 //                              2
-let numero1 = parseFloat(prompt("Digite o primeior numero: "));
-let numero2 = parseFloat(prompt("Digite o segundo numero: "));
+let numero3 = parseFloat(prompt("Digite o primeior numero: "));
+let numero4 = parseFloat(prompt("Digite o segundo numero: "));
 
-if (numero1 > numero2) {
-    alert(`O número ${numero1.toFixed(1)} é maior que número ${numero2.toFixed(1)}`);
-} else if (numero2 > numero1) {
-    alert(`O número ${numero2.toFixed(1)} é maior que número ${numero1.toFixed(1)}`);
+if (numero3 > numero4) {
+    alert(`O número ${numero3.toFixed(1)} é maior que número ${numero4.toFixed(1)}`);
+} else if (numero4 > numero3) {
+    alert(`O número ${numero4.toFixed(1)} é maior que número ${numero3.toFixed(1)}`);
 } else {
     alert("Números iguais");
 }
@@ -32,11 +32,11 @@ if (numero1 > numero2) {
 
 
 //                                 3
-let salario = parseFloat(prompt("Digite o seu salario aqui."));
-let prestacao = parseFloat(prompt("Digite o valor da prestação aqui."));
-let porcentagem = (30 * salario) / 100;
+let salario1 = parseFloat(prompt("Digite o seu salario aqui."));
+let prestacao1 = parseFloat(prompt("Digite o valor da prestação aqui."));
+let porcentagem1 = (30 * salario1) / 100;
 
-if (prestacao > porcentagem) {
+if (prestacao1 > porcentagem1) {
     alert("Empréstimo não concedido");
 } else {
     alert("Empréstimo concedido");
@@ -45,12 +45,12 @@ if (prestacao > porcentagem) {
 
 
 //                                     4
-let numero = prompt("Digite um numero");
-let agoritimo1 = parseInt(numero[0]);
-let agoritimo2 = parseInt(numero[1]);
+let numero5 = prompt("Digite um numero");
+let agoritimo1 = parseInt(numero5[0]);
+let agoritimo2 = parseInt(numero5[1]);
 let divisivelPor3 = (agoritimo1 + agoritimo2) % 3;
-let numeroPar = parseInt(numero) % 2;
-let numeroImpar = parseInt(numero) % 2;
+let numeroPar = parseInt(numero5) % 2;
+let numeroImpar = parseInt(numero5) % 2;
 
 if (divisivelPor3 == 0 && agoritimo2 == 0) {
     alert("Valor inválido")
@@ -194,23 +194,23 @@ if (praga == 1) {
 
 
 //                                    9
-let tempo = parseFloat(prompt("Digite aqui o tempo gasto."));
+let tempo1 = parseFloat(prompt("Digite aqui o tempo gasto."));
 let velocidade = parseFloat(prompt("Digite a Velocidade do veiculo."));
 let distancia = tempo * velocidade;
 let litrosUsados = distancia / 12;
-alert(`Seu veículo percorreu ${distancia} km a ${velocidade} km/h em ${tempo}h de viagem e consumiu ${litrosUsados.toFixed(2)}l de gasolina`);
+alert(`Seu veículo percorreu ${distancia} km a ${velocidade} km/h em ${tempo1}h de viagem e consumiu ${litrosUsados.toFixed(2)}l de gasolina`);
 
 
 
 //                                            10
 let valor = parseFloat(prompt("Digite o valor da prestação."));
 let taxa = parseFloat(prompt("Digite o valor da taixa"))
-let tempo = parseFloat(prompt("Digite o tempo de atraso em dias."))
-let prestacao = valor * (taxa / 100) * tempo;
+let tempo2 = parseFloat(prompt("Digite o tempo de atraso em dias."))
+let prestacao = valor * (taxa / 100) * tempo2;
 let total = prestacao + valor;
-let testeTempo = Number.isInteger(tempo)
+let testeTempo = Number.isInteger(tempo2)
 
-if (testeTempo == false || tempo == 0) {
+if (testeTempo == false || tempo2 == 0) {
     alert("Valor inválido o tempo de atraso deve ser em dias");
 } else {
     alert(`R$${total}`);
